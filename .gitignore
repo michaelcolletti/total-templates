@@ -1,0 +1,11 @@
+# for templates
+
+# ENVs
+venv
+.venv
+*/.venv
+.env
+env
+ENV
+.ENV
+
