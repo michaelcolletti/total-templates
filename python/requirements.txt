@@ -1,0 +1,5 @@
+pytest
+pylint
+black
+git+https://github.com/LIAAD/yake
+
