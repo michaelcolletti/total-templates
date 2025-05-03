@@ -3,7 +3,9 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv test_main.py
+	python -m pytest -vv test_main.py 
+
+refactor: format lint
 
 format:
 	black *.py
@@ -12,7 +14,7 @@ run:
 	python src/main.py
 
 lint:
-	-pylint --disable=R,C src/main.py
+	-pylint --disable=R,C src/main.py --ignore-patterns=test_?.py *.py  
 
 clean:
 	rm -rf __pycache__/
